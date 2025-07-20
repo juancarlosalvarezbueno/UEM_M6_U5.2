@@ -1,0 +1,22 @@
+<h2>Formulario</h2>
+<form>
+    <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput [(ngModel)]="nombre" name="nombre" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="email" name="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Dirección</mat-label>
+        <input matInput [(ngModel)]="direccion" name="direccion" />
+    </mat-form-field>
+
+    <div class="buttons">
+        <button mat-button (click)="onCancel()">Cancelar</button>
+        <button mat-raised-button color="primary" (click)="onSubmit()">Enviar</button>
+    </div>
+</form>

@@ -1,0 +1,22 @@
+
+<div style="text-align: center; margin: 20px 0;">
+  <button mat-raised-button color="accent" (click)="openDialog()">Abrir Formulario</button>
+</div>
+
+<div *ngIf="formData" style="display: flex; justify-content: center;">
+  <mat-card style="width: 400px;">
+    <mat-card-header>
+      <mat-card-title>📋 Datos Recibidos</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>👤 Nombre:</strong> {{ formData.nombre }}</p>
+      <p><strong>📧 Email:</strong> {{ formData.email }}</p>
+      <p><strong>🏠 Dirección:</strong> {{ formData.direccion }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- Gráficos -->
+<div style="margin-top: 40px;">
+  <app-charts></app-charts>
+</div>

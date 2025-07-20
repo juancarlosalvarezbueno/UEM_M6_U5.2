@@ -1,0 +1,27 @@
+<h3>Gráfico de Líneas</h3>
+<ngx-charts-line-chart
+    [view]="view"
+    [scheme]="'vivid'"
+    [results]="lineData"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    xAxisLabel="Mes"
+    yAxisLabel="Ventas">
+</ngx-charts-line-chart>
+
+<h3>Gráfico de Barras</h3>
+<ngx-charts-bar-vertical
+    [view]="view"
+    [scheme]="'cool'"
+    [results]="barData"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    xAxisLabel="Producto"
+    yAxisLabel="Cantidad">
+</ngx-charts-bar-vertical>
